@@ -1,0 +1,56 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  font-family: Montserrat;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex-grow: 1;
+}
+
+.button-gradient {
+  background-image: linear-gradient(180deg, rgb(164, 205, 147), rgb(0, 180, 209));
+}
+
+.button-color {
+  color: #00b2d5;
+}
+
+.button-gradient-text {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(90deg, rgb(164, 205, 147), rgb(0, 180, 209));
+}
+
+.questions {
+  width: 100%;
+  position: relative;
+  background-image: url("../../public/assets/img/bg-form.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+.questions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(21, 30, 47, 0.8);
+  z-index: -1;
+}
+
