@@ -1,5 +1,5 @@
 import Head from "next/head";
-import {FC, useContext, useEffect, useState} from "react";
+import {FC, useEffect, useState} from "react";
 import { GradientButton } from "@/components/GradientButton/GradientButton";
 import { ProductCard } from "@/components/ProductCard/ProductCard";
 import axios from "axios";
