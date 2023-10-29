@@ -81,6 +81,7 @@ export const ProductDetails: FC = () => {
                   <GradientButton
                     classNameButton="button-gradient text-white rounded px-4 py-2 mr-2"
                     width="w-full sm:w-auto"
+                    onClick={() => addToCart(productToShow)}
                   >
                     Add to Cart
                   </GradientButton>

@@ -42,6 +42,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   };
 
   const increaseQuantity = (productId: number) => {
+    console.log("hello is plus product")
     setCart((prevCart) => {
       return prevCart.map((product) => {
         if (product.id === productId) {
@@ -53,6 +54,7 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   };
 
   const decreaseQuantity = (productId: number) => {
+    console.log("hello is minus product")
     setCart((prevCart) => {
       return prevCart.map((product) => {
         if (product.id === productId && Number(product.quantity) > 1) {
