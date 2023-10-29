@@ -1,35 +1,8 @@
 import Head from "next/head";
-import {FC, useEffect, useState} from "react";
+import { FC, useState } from "react";
 import { GradientButton } from "@/components/GradientButton/GradientButton";
 import { ProductCard } from "@/components/ProductCard/ProductCard";
-import axios from "axios";
-import { StaticImageData } from "next/image";
-
-interface Product {
-  quantity: number;
-  image: StaticImageData;
-  title: string;
-  description: string;
-  productDesc: string;
-  id: number;
-}
-
-const useProducts = (): Product[] => {
-  const [products, setProducts] = useState<Product[]>([]);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const response = await axios.get<Product[]>(
-        "http://localhost:3000/api/products",
-      );
-      setProducts(response.data);
-    };
-
-    fetchProducts();
-  }, []);
-
-  return products;
-};
+import { useProducts } from "@/lib/hooks/useProduct";
 
 export const Catalog: FC = () => {
   const [visibleCategories, setVisibleCategories] = useState<number>(3);
@@ -38,7 +11,6 @@ export const Catalog: FC = () => {
   const handleLoadMore = () => {
     setVisibleCategories((prev) => prev + 3);
   };
-
 
   return (
     <div className="p-4 md:p-12 lg:p-24">

@@ -1,16 +1,8 @@
 import React, { FC } from "react";
+
 import { GradientButton } from "@/components/GradientButton/GradientButton";
+import { InputField } from "@/components/ContactForm/InputField";
 
-interface InputFieldProps {
-  placeholder: string;
-}
-
-const InputField: FC<InputFieldProps> = ({ placeholder }) => (
-  <input
-    className="w-full p-4 mb-4 border rounded-md"
-    placeholder={placeholder}
-  />
-);
 export const ContactForm: FC = () => {
   const containerStyle =
     "bg-gray-100 max-w-6xl m-auto p-6 sm:p-10 lg:p-14 flex flex-col sm:flex-row justify-between items-center";
