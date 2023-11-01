@@ -1,0 +1,23 @@
+{
+  "graphic1": [
+    {
+      "labels": ["Aug", "Sep", "Nov", "Dec", "Jan"],
+      "data": [22, 17, 25, 30, 33]
+    }
+  ],
+  "graphic2": [
+    {
+      "labels": ["Aug", "Sep", "Nov", "Dec", "Jan"],
+      "line1": {
+        "label": "Visits 2022",
+        "data": [15, 17, 18, 17, 15],
+        "fill": false
+      },
+      "line2": {
+        "label": "Visits 2023",
+        "data": [33, 32, 31, 32, 33],
+        "fill": false
+      }
+    }
+  ]
+}

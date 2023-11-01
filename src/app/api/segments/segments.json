@@ -1,0 +1,50 @@
+[
+  {
+    "name": "North America",
+    "percentage": 78.3,
+    "color": "rgba(111, 225, 255, 1)",
+    "gradient": "rgba(8, 177, 248, 1)",
+    "top": "30%",
+    "left": "20%"
+  },
+  {
+    "name": "South America",
+    "percentage": 12.1,
+    "color": "rgba(223, 131, 255, 1)",
+    "gradient": "rgba(8, 104, 248, 1)",
+    "top": "60%",
+    "left": "30%"
+  },
+  {
+    "name": "Europe",
+    "percentage": 8.3,
+    "color": "rgba(218, 126, 179, 1)",
+    "gradient": "rgba(242, 55, 100, 1)",
+    "top": "18%",
+    "left": "55%"
+  },
+  {
+    "name": "Asia",
+    "percentage": 2.3,
+    "color": "rgba(255, 212, 103, 1)",
+    "gradient": "rgba(255, 199, 0, 1)",
+    "top": "30%",
+    "left": "75%"
+  },
+  {
+    "name": "Australia",
+    "percentage": 2.0,
+    "color": "rgba(89, 238, 131, 1)",
+    "gradient": "rgba(0, 255, 224, 1)",
+    "top": "70%",
+    "left": "80%"
+  },
+  {
+    "name": "Africa",
+    "percentage": 2.0,
+    "color": "rgba(72, 178, 255, 1)",
+    "gradient": "rgba(0, 102, 255, 1)",
+    "top": "50%",
+    "left": "65%"
+  }
+]

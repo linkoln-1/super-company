@@ -5,8 +5,6 @@ import { Catalog } from "@/components/Homepage/HomePage";
 import { ContactForm } from "@/components/ContactForm/ContactForm";
 import { ContactsSection } from "@/components/ContactForm/ContactSection";
 
-import "../ styles/globals.css";
-
 const Home: React.FC = () => {
   return (
     <>

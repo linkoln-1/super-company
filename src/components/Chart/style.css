@@ -1,0 +1,56 @@
+.cards-container {
+    display: flex;
+    gap: 16px;
+}
+
+.card {
+    width: 318px;
+    height: 155px;
+    margin-top: 50px;
+    padding: 16px;
+    border: 3px solid  #39C5EA;
+    border-radius: 28px;
+    box-shadow: 0 10px 10px 0 #39C5EA;
+}
+
+.card:nth-child(2),
+.card:nth-child(3) {
+    box-shadow: none;
+    border: none;
+    background-color: #F6F9FA;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+}
+
+.card-text-small {
+    font-size: 14px;
+    color: #7D83A1;
+}
+
+.card-text-large {
+    font-size: 28px;
+    font-weight: bold;
+    color: #7D83A1;
+}
+
+.card-text-large > span {
+    font-size: 16px;
+    color: green;
+    font-weight: 400;
+}
+
+
+.animated-bar {
+    transition: width 0.5s ease-in-out;
+}
+
+.map-container {
+    background-image: url('../../../public/assets/img/planet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
