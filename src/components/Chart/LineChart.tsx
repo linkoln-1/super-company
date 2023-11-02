@@ -31,7 +31,7 @@ const LineChart: React.FC<LineChartProps> = ({ labels, data }) => {
       {
         label: "Graphic 1",
         data,
-        backgroundColor: "rgba(173, 216, 230, 0.5)",
+        // backgroundColor: "rgba(173, 216, 230, 0.5)",
         borderColor: "#23C8FC",
         borderWidth: 3,
         pointBackgroundColor: "#23C8FC",
@@ -52,18 +52,14 @@ const LineChart: React.FC<LineChartProps> = ({ labels, data }) => {
         },
       },
       x: {
-        title: {
-          color: "red",
-          display: true,
-          text: "Graphic-1",
-        },
+        grid: {display: false}
       },
     },
   };
 
   return (
-    <div style={{ width: "560px", height: "300px" }}>
-      <Line data={chartData} options={options} width={560} height={300} />
+    <div style={{ width: "60%", height: "300px" }} className="mx-auto mt-9 bg-white rounded-lg pl-2 pt-2 shadow-2xl">
+      <Line data={chartData} options={options} width={1220} height={400} />
     </div>
   );
 };

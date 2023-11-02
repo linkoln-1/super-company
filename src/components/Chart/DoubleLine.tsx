@@ -58,17 +58,13 @@ const DoubleLineChart: React.FC<DoubleLineChartProps> = ({
         },
       },
       x: {
-        title: {
-          color: "red",
-          display: true,
-          text: "Graphic-2",
-        },
+        grid: {display: false}
       },
     },
   };
   return (
-    <div style={{ width: "560px", height: "300px", marginTop: "30px" }}>
-      <Line data={data} width={560} height={300} options={options} />
+    <div style={{ width: "60%", height: "250px" }} className="mx-auto mt-9 bg-white rounded-lg pl-2 pt-2 shadow-2xl">
+      <Line data={data} width={1210} height={300} options={options} />
     </div>
   );
 };

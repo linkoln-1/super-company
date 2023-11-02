@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 * {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
 }
 
 html, body {
@@ -14,6 +14,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  /*background-color: #e8e8e8;*/
 }
 
 #root {

@@ -29,6 +29,8 @@ export const World = () => {
       gradient: segment.gradient,
       top: segment.top,
       left: segment.left,
+      hex: segment.hex,
+      size: segment.size,
     }));
   };
   return (

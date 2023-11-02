@@ -36,6 +36,7 @@ const Tooltip: React.FC<TooltipProps> = ({
           className="z-10 p-2 bg-white border border-gray-300 rounded-full shadow-lg w-44 text-center"
           style={{
             position: "absolute",
+            top: "5px"
           }}
         >
           {content}

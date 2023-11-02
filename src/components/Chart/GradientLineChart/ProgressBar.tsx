@@ -34,10 +34,10 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ segments }) => {
       <div className="mt-7">
         <hr />
       </div>
-      <div className="flex mt-2 flex-wrap w-12/12 p-4">
+      <div className="flex mt-2 flex-wrap w-10/12 p-4">
         {segments.map((segment, index) => (
           <div
-            className="bg-gray-100 p-2 rounded-full flex items-center space-x-3 mt-3 w-44 ml-2"
+            className="bg-gray-100 p-2 rounded-full flex items-center space-x-3 mt-3 ml-2"
             key={index}
           >
             <span
