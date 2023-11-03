@@ -49,6 +49,9 @@ const DoubleLineChart: React.FC<DoubleLineChartProps> = ({
   };
 
   const options = {
+    responsive: true,
+    maintainAspectRatio: true,
+    aspectRatio: 4,
     scales: {
       y: {
         max: 40,
@@ -63,8 +66,8 @@ const DoubleLineChart: React.FC<DoubleLineChartProps> = ({
     },
   };
   return (
-    <div style={{ width: "60%", height: "250px" }} className="mx-auto mt-9 bg-white rounded-lg pl-2 pt-2 shadow-2xl">
-      <Line data={data} width={1210} height={300} options={options} />
+    <div style={{ width: "80vw", height: "40vh" }} className="mx-auto mt-9 bg-white rounded-lg pl-2 pt-2 shadow-2xl">
+      <Line data={data} options={options} />
     </div>
   );
 };

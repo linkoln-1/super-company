@@ -33,7 +33,7 @@ const Tooltip: React.FC<TooltipProps> = ({
     >
       {visible && (
         <div
-          className="z-10 p-2 bg-white border border-gray-300 rounded-full shadow-lg w-44 text-center"
+          className="z-10 p-2 bg-white border border-gray-300 rounded-full shadow-lg xl:w-44 text-center"
           style={{
             position: "absolute",
             top: "5px"

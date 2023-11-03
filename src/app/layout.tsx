@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header/Header";
 import { Footer } from "@/components/Footer/Footer";
 
-import "../styles/globals.css";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SUPERCOMPANY",

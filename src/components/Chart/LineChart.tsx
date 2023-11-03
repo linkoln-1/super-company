@@ -43,6 +43,8 @@ const LineChart: React.FC<LineChartProps> = ({ labels, data }) => {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: true,
+    aspectRatio: 4,
     scales: {
       y: {
         max: 40,
@@ -58,8 +60,8 @@ const LineChart: React.FC<LineChartProps> = ({ labels, data }) => {
   };
 
   return (
-    <div style={{ width: "60%", height: "300px" }} className="mx-auto mt-9 bg-white rounded-lg pl-2 pt-2 shadow-2xl">
-      <Line data={chartData} options={options} width={1220} height={400} />
+    <div style={{ width: "80vw", height: "40vh" }} className="mx-auto mt-9 bg-white rounded-lg pl-2 pt-2 shadow-2xl">
+      <Line data={chartData} options={options} />
     </div>
   );
 };

@@ -61,3 +61,10 @@
     transform: rotate(0deg);
     background-position: bottom !important;
 }
+
+/*@media (min-width: 1280px) {*/
+/*    .map-container {*/
+/*        width: 100%;*/
+/*        background-size: 1280px 100%;*/
+/*    }*/
+/*}*/
